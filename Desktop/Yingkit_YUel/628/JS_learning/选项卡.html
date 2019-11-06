@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选项卡test</title>
+</head>
+<body>
+    <style type="text/css">
+        .btns{
+            width: 500px;
+            height: 50px;
+        }
+        .btns input{
+            width: 100px;
+            height: 50px;
+            color: #666;
+            border:0px;
+        }
+
+        .btns input.cur{
+            background-color: gold;
+        }
+
+        .content div{
+            width: 500px;
+            height: 200px;
+            background-color: gold;
+            line-height: 200px;
+            text-align: center;
+
+            display: none;
+        }
+
+        .content div.active{
+            display: block;
+        }
+
+    </style>
+
+    <script>
+        window.onload = function () {
+            var aBtn = document.getElementById('btns').getElementsByTagName('input')
+            var aCon = document.getElementById('content').getElementsByTagName('div')
+
+
+            for (var i = 0; i < aBtn.length; i++){
+                (function (i) {
+                    aBtn[i].onclick = function () {
+                    for (var j = 0;j < aBtn.length; j++){
+                        aBtn[j].className = '';
+                        aCon[j].className = '';
+                    }
+                    this.className = 'cur';
+                    aCon[i].className = 'active'
+
+                }
+                })(i)
+
+            }
+
+
+
+
+
+        }
+
+
+    </script>
+
+    <div class="btns" id="btns">
+        <input type="button" value="tab01" class="cur">
+        <input type="button" value="tab02">
+        <input type="button" value="tab03">
+    </div>
+
+    <div class="content" id="content">
+        <div class="active">文字内容1</div>
+        <div>文字内容2</div>
+        <div>文字内容3</div>
+    </div>
+</body>
+</html>

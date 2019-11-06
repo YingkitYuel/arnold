@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select id="provinces">
+        <option value="">请选择省份</option>
+<!--        <option value="">请选择省份</option>-->
+<!--        <option value="">请选择省份</option>-->
+<!--        <option value="">请选择省份</option>-->
+    </select>
+
+    <select name="" id="city">
+        <option value="">请选择城市</option>
+    </select>
+
+    <script>
+
+        data={'河北省':['石家庄','廊坊'],'山西':['晋城','太原'],'山东':['济宁','济南']};
+
+        var pro_ele = document.getElementById('provinces');
+        var city_ele = document.getElementById('city');
+
+        for (var i in data) {
+            var ele = document.createElement('option');
+            ele.innerHTML = i;
+            pro_ele.appendChild(ele);
+        }
+
+        pro_ele.onchange = function () {
+            console.log(this.selectedIndex);
+            console.log(this.options[this.selectedIndex]);
+            console.log(this.options);
+            var city = data[this.options[this.selectedIndex].innerHTML];
+
+            city_ele.options.length = 1;
+
+            for (var i = 0; i < city.length; i++) {
+                var ele = document.createElement('option');
+                ele.innerHTML = city[i];
+                city_ele.appendChild(ele);
+            }
+
+        }
+    </script>
+</body>
+</html>

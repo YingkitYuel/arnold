@@ -1,0 +1,55 @@
+#box{
+    width: 790px;
+    height: 340px;
+    margin: 0 auto;
+    position: relative;
+}
+#list{
+    list-style: none;
+    bottom: 5px;
+    left: 240px;
+    position: absolute;
+}
+.li{
+    float: left;
+
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+
+    background-color: #aaa;
+    margin-right: 10px;
+
+    text-align: center;
+    line-height: 20px;
+
+    border-radius: 50%;
+}
+
+#leftbt{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    left: 0px;
+    top: 130px;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 40px;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    /*不显示*/
+    display: none;
+}
+#rightbt{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    right: 0px;
+    top: 130px;
+    background-color: rgba(0,0,0,0.2);
+    font-size: 40px;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    display: none;
+}

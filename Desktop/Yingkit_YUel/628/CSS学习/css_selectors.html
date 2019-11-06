@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            color: red;
+        }
+
+        /*寻找ID专用*/
+        #littlep{
+            background-color: yellow;
+        }
+
+        /*寻找class专用*/
+        .pipi{
+            color: brown;
+        }
+
+        div.pipi{
+            color: hotpink;
+        }
+
+        #littlep,div.pipi{
+            background-color: aqua;
+        }
+
+        .div1 div{
+            color: hotpink;
+        }
+        [alex]{
+            color: blue;
+        }
+        p[alex='sb2']{
+            font-family: "Times New Roman";
+            font-size: 30px;
+        }
+
+        [alex ^= 's']{
+            color: teal;
+        }
+
+    </style>
+</head>
+<body>
+hello body
+    <div>Hello div</div>
+    <p id="littlep">pppp</p>
+    <p class="pipi">ppp</p>
+    <p class="pipi">pp</p>
+    <p >p</p>
+    <div class="pipi">div</div>
+    <a href="">aaa</a>
+
+
+    <div class="div1">
+        <div class="div2">
+            <a href="">a</a>
+            <p>ppp</p>
+            <div>div3</div>
+        </div>
+        <p>p ele</p>
+    </div>
+
+    <p>
+        <!--不成功-->
+        <div>p中的div</div>
+    </p>
+
+
+<!--属性选择器-->
+<div>hello</div>
+<div alex="sb liu">alex</div>
+<div alex="sb2">alex2</div>
+<p alex="sb2">alex3</p>
+
+
+
+</body>
+</html>

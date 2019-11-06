@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {{ block.super }}
+    {% for student in student_list %}
+        <h2>学生:{{ student }}</h2>
+    {% endfor %}
+{% endblock %}

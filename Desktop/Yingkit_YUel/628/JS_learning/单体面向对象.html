@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单体</title>
+
+    <script>
+        var Tom = {
+            name:'tom',
+            age:18,
+
+            showname:function () {
+                alert(this.name);
+            },
+
+            showage:function () {
+                alert(this.age)
+            }
+        }
+
+
+        alert(Tom.name);
+        alert(Tom.age);
+        Tom.showname();
+        Tom.showage();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

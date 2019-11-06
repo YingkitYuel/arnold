@@ -1,0 +1,61 @@
+iter: 10 / 100, total loss: 0.266619
+>>> rpn_loss_cls: 0.237918
+>>> rpn_loss_box: 0.02870 
+>>> loss_cls: 0.000000 
+>>> loss_box: 0.000000
+
+iter: 20 / 100, total loss: 0.305569
+ >>> rpn_loss_cls: 0.263031 
+>>> rpn_loss_box: 0.042439 
+>>> loss_cls: 0.000100 
+>>> loss_box: 0.000000
+
+iter: 30 / 100, total loss: 0.327274 
+>>> rpn_loss_cls: 0.110181
+>>> rpn_loss_box: 0.002729
+>>> loss_cls: 0.106015
+>>> loss_box: 0.108349
+
+iter: 40 / 100, total loss: 0.317474
+>>> rpn_loss_cls: 0.163340
+>>> rpn_loss_box: 0.069309
+>>> loss_cls: 0.066759
+>>> loss_box: 0.018066
+
+iter: 50 / 100, total loss: 0.390172 
+>>> rpn_loss_cls: 0.110224
+>>> rpn_loss_box: 0.021174
+>>> loss_cls: 0.145216
+>>> loss_box: 0.113559
+
+iter: 60 / 100, total loss: 0.328498
+>>> rpn_loss_cls: 0.138779
+>>> rpn_loss_box: 0.139071
+>>> loss_cls: 0.042078
+>>> loss_box: 0.008569
+
+iter: 70 / 100, total loss: 0.585293 
+>>> rpn_loss_cls: 0.101324
+>>> rpn_loss_box: 0.004955
+>>> loss_cls: 0.254035
+>>> loss_box: 0.224978
+
+iter: 80 / 100, total loss: 0.265981
+>>> rpn_loss_cls: 0.108745
+>>> rpn_loss_box: 0.051767
+>>> loss_cls: 0.074797
+>>> loss_box: 0.030672
+
+iter: 90 / 100, total loss: 0.652984
+>>> rpn_loss_cls: 0.09232 
+>>> rpn_loss_box: 0.006928
+>>> loss_cls: 0.27798 
+>>> loss_box: 0.275749
+
+iter: 100 / 100, total loss: 0.183063 
+>>> rpn_loss_cls: 0.051178
+>>> rpn_loss_box: 0.02849 
+>>> loss_cls: 0.088065 
+>>> loss_box: 0.015324
+ 
+

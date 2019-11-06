@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div #div_1{
+            width: 300px;
+            height: 100px;
+            background-color: gold;
+        }
+        #div #div_2{
+            width: 300px;
+            height: 100px;
+            background-color: green;
+        }
+        #div #div_3{
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+        }
+        #div #div_4{
+            width: 300px;
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<input type="button" onclick="addNode()">
+<input type="button" onclick="deleteNode()">
+<input type="button" onclick="updateNode()">
+<input type="button" onclick="copyNode()">
+
+
+<div id="div">
+    <div id="div_1"></div>
+    <div id="div_2"></div>
+    <div id="div_3"></div>
+    <div id="div_4"></div>
+</div>
+
+
+<script type="text/javascript">
+    function addNode() {
+        var div = document.getElementById('div_1');
+        var eleA = document.createElement('a');
+        eleA.setAttribute('href', 'https://www.baidu.com');
+        eleA.innerHTML = '百度';
+        div.appendChild(eleA);
+    }
+
+    function deleteNode() {
+        var div = document.getElementById('div_2');
+        var parent = div.parentNode;
+        parent.removeChild(div);
+    }
+
+    function updateNode() {
+        var div = document.getElementById('div_3');
+        var img = document.createElement('img');
+        img.setAttribute('src', '001.jpg');
+        var parent = div.parentNode;
+        parent.replaceChild(img, div);
+    }
+
+    function copyNode() {
+        var div = document.getElementById('div_4');
+        var div_copy = div.cloneNode(true);
+        var parent = div.parentNode;
+        parent.appendChild(div_copy);
+    }
+</script>
+</body>
+</html>
